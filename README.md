@@ -1,2 +1,2 @@
-https://snaky7.github.io/---------------/index.html
+https://snaky7.github.io/Practic/
 Демо-версия сайта 
