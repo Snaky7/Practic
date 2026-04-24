@@ -1,0 +1,346 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f6fc;
+    padding-top: 80px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(12, 18, 35, 0.95);
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a,
+.auth {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.auth:hover {
+    color: #b7c6ff;
+}
+
+
+
+
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e3f7ff;
+    border-radius: 8px;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.phone,
+.email {
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+/* Notification Styles */
+.notification {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-icon {
+    margin-right: 20px;
+}
+
+.notification-icon img {
+    width: 100px;
+    height: 90px;
+}
+
+.notification-content {
+    flex-grow: 1;
+
+}
+
+.notification-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.view-tasks-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.view-tasks-btn:hover {
+    background-color: #e03e3e;
+}
+
+/* Courses Styles */
+.courses {
+    margin-top: 40px;
+}
+
+.course-card {
+    background-color: #3a5a99;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.course-info img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.course-details {
+    flex-grow: 1;
+}
+
+.course-progress {
+    width: 100px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 100px;
+    height: 10px;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Achievements Styles */
+h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Моя успеваемость */
+.achievements {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.achievements-filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.achievements-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.achievement-table th,
+.achievement-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.achievement-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.achievement-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.success {
+    color: green;
+}
+
+.status.fail {
+    color: red;
+}
+
+.status.review {
+    color: orange;
+}
+
+/* Additional Card Style */
+.achievement-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 30px;
+}
+
+.footer-column a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.footer-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-phone {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
